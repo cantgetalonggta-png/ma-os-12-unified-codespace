@@ -1,43 +1,45 @@
 # MA-OS-12 UNIFIED CODESPACE
 
-**Ontological monorepo** that catalogs and wires **every** operator GitHub repository into one Codespace-ready workspace.
+**Ontological monorepo** for every repo under `cantgetalonggta-png` that is safe to combine in one Codespace.
 
 | Field | Value |
 |-------|--------|
 | Owner | `cantgetalonggta-png` |
-| Prior codespace hint | https://special-telegram-xrwr5r5rxgv42v4p4.github.dev/ |
-| Dual TTS (locked) | **Rex** + **Helios** |
-| Ceiling | Public-record only · Association ≠ guilt · **No secrets in tree** |
+| Catalog | [`catalog/REPO_INVENTORY.md`](catalog/REPO_INVENTORY.md) · [`catalog/REPOSITORIES.json`](catalog/REPOSITORIES.json) |
+| Ceiling | Public-record · Association ≠ guilt · **No secrets in tree** |
+| Submodules | Public investigation / swarm / MCP / desk only |
 
-## What this combines
+## Account inventory (19 repos)
 
-See [`catalog/REPOSITORIES.json`](catalog/REPOSITORIES.json).
+- **13 public** → listed in `.gitmodules` under `modules/` (optional clone)
+- **6 private** → **catalog-only** (including `api-keys-secret-store`) — never submodule, never copied here
 
-- **Public repos** → optional git submodules under `modules/`
-- **Private / sealed** (including `api-keys-secret-store`) → **catalog-only**, never submodule, never copied into this tree
+## Open Codespace (required operator click)
 
-## Open in Codespaces
+GitHub does not allow a third party to force-create a Codespace on your account without you. Use one of:
 
-1. Open this repo on GitHub → **Code → Codespaces → Create codespace on main**
-2. Or: `gh codespace create -r cantgetalonggta-png/ma-os-12-unified-codespace -b main`
-3. After start: `bash scripts/bootstrap.sh`
+1. **UI:** [Create codespace on this repo](https://github.com/codespaces/new?hide_repo_select=true&repo=cantgetalonggta-png/ma-os-12-unified-codespace)
+2. **CLI:** `gh codespace create -r cantgetalonggta-png/ma-os-12-unified-codespace -b main`
+3. Repo page → **Code → Codespaces → Create codespace on main**
 
-## Bootstrap
+After start:
 
 ```bash
-bash scripts/bootstrap.sh          # install tooling + init public submodules
-bash scripts/status.sh             # print catalog + health URLs
+bash scripts/bootstrap.sh   # tooling + public submodules
+bash scripts/status.sh      # health + URLs
 ```
 
-## Portal
+## What is intentionally excluded
 
-Static operator portal (Vercel-ready): `portal/` — links desk, bridge, strand, catalog.
+- Private key stores and private backups (see inventory)
+- Offensive dork / evasion tooling (desk quarantine policy)
+- Any material that would put secrets into a public monorepo
+
+## Related live surfaces
+
+- Desk: often `ma-os-12-console` on Vercel
+- Strand: `strand-osint-mesh` homepage when deployed
 
 ## Directives
 
-`directives/PERMANENT_DIRECTIVES.md` — dual export Rex+Helios until `STOP EXPORT`.
-
-## Deployment automation
-
-- GitHub Actions: `.github/workflows/deploy-portal.yml`
-- Principles: reproducible build, health checks, no secrets baked in
+See `directives/` and operator MEMORYCORE. Cancel dual-export: `STOP EXPORT`.
