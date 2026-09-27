@@ -1,28 +1,23 @@
-# Recommendations backlog — accepted for execution
+# Recommendations backlog
 
-Committed 2026-09-27. Operator ordered: commit all OS policy + all other suggestions.
+Updated 2026-09-27 (All execution pass).
 
-| ID | Recommendation | Status |
-|----|----------------|--------|
-| R1 | Commit `OPEN_SOURCE_USE_POLICY.md` | DONE (this commit) |
-| R2 | Full 19-repo catalog in unified codespace | DONE |
-| R3 | Public-only submodules; private sealed catalog-only | DONE |
-| R4 | Never submodule `api-keys-secret-store` into public tree | DONE (policy) |
-| R5 | Codespace open is operator one-click (`gh codespace create` / UI) | DOCUMENTED |
-| R6 | `bash scripts/bootstrap.sh` after Codespace start | DOCUMENTED |
-| R7 | Vite SPA: only `VITE_PUBLIC_*` non-secrets in client | ENFORCED in desk policy |
-| R8 | Ollama context ≥64k for agentic local work when VRAM allows | SKILL |
-| R9 | MCP: secrets via `inputs` / env, not hard-coded | SKILL |
-| R10 | Quarantine Generated0 / generated_dorks / ghost_rotate from live agents | QUARANTINE |
-| R11 | Legal dorking only via dorking-mastery (gov/archive/scholarly) | POLICY |
-| R12 | Dual hourly automations + TeacherUplink ×5 | RUNNING (operator tasks) |
-| R13 | Audio briefings permanently uploaded to Google Drive | THIS CYCLE |
-| R14 | Optional: AGENTS.md at console repo root (public-record + no client secrets) | OPEN |
-| R15 | Optional: Vercel portal root = `portal/` on unified codespace | OPEN |
-| R16 | Optional: expand any CONV0x MP3 to 10-minute panel on request | OPEN |
-
-## Next open items (operator pick)
-
-- **A** — Write root `AGENTS.md` for `ma-os-12-console`
-- **B** — Point Vercel project at unified `portal/`
-- **C** — Expand selected audio briefings to 10 minutes
+| ID | Item | Status |
+|----|------|--------|
+| R1 | OPEN_SOURCE_USE_POLICY | DONE |
+| R2 | 19-repo catalog | DONE |
+| R3 | Public-only submodules | DONE |
+| R4 | No api-keys-secret-store submodule | DONE |
+| R5 | Codespace operator open | DOCUMENTED |
+| R6 | bootstrap.sh | DONE |
+| R7 | VITE_PUBLIC only | POLICY |
+| R8 | Ollama context skill | DONE |
+| R9 | MCP inputs for secrets | POLICY |
+| R10 | Quarantine probe dumps | DONE |
+| R11 | Legal dorking only | POLICY |
+| R12 | Dual hourly automations | OPERATOR TASKS |
+| R13 | Audio → Drive | DONE |
+| R14 | AGENTS.md on console | DONE |
+| R15 | Portal + Vercel link docs | DONE (portal exists; project link operator/Vercel) |
+| R16 | Expand audio to ~10 min | IN PROGRESS this cycle |
+| R17 | OS_POLICY_IMPLEMENTATION.md | DONE |

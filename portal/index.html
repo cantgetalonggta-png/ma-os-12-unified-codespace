@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MA-OS-12 Unified Codespace Portal</title>
-<style>
-  :root{--bg:#090a0f;--fg:#e2e8f0;--acc:#f59e0b;--muted:#64748b;--card:#0b0f19}
-  *{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui;background:var(--bg);color:var(--fg);
-  background-image:linear-gradient(to_right,#ffffff08 1px,transparent 1px),linear-gradient(to_bottom,#ffffff08 1px,transparent 1px);
-  background-size:24px 24px;min-height:100vh}
-  header{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;border-bottom:1px solid #ffffff10;backdrop-filter:blur(8px)}
-  h1{font-size:14px;letter-spacing:.08em;margin:0} .chip{font-size:11px;color:var(--acc);font-family:ui-monospace,monospace}
-  main{max-width:1100px;margin:24px auto;padding:0 16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
-  .card{background:var(--card);border:1px solid #ffffff10;border-radius:8px;padding:14px}
-  .card h2{font-size:13px;margin:0 0 6px;color:#f8fafc} .card p{font-size:12px;color:var(--muted);margin:0 0 10px;line-height:1.4}
-  a{color:var(--acc);font-size:12px;text-decoration:none} a:hover{text-decoration:underline}
-  footer{text-align:center;color:var(--muted);font-size:11px;padding:24px;font-family:ui-monospace,monospace}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MA-OS-12 Operator Portal</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { font-family: ui-sans-serif, system-ui, sans-serif; background: #090a0f; color: #e2e8f0; margin: 0; padding: 2rem; }
+    h1 { font-size: 1.5rem; letter-spacing: 0.04em; }
+    a { color: #fbbf24; }
+    .card { border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #0b0f19; }
+    .muted { color: #94a3b8; font-size: 0.875rem; }
+    ul { line-height: 1.7; }
+  </style>
 </head>
 <body>
-<header>
-  <h1>MA-OS-12 · UNIFIED CODESPACE PORTAL</h1>
-  <span class="chip">DUAL TTS · REX + HELIOS · PUBLIC-RECORD CEILING</span>
-</header>
-<main id="grid"></main>
-<footer>Association ≠ guilt · No secrets in tree · Prior codespace: special-telegram · github.dev</footer>
-<script>
-const repos = [
-  {n:"Desk SPA",u:"https://ma-os-12-console-echo-ec69.vercel.app",d:"Investigation desk production"},
-  {n:"MCP Bridge health",u:"https://manus-mcp-bridge-echo-ec69.vercel.app/health",d:"Manus bridge /health"},
-  {n:"STRAND mesh",u:"https://strand-osint-mesh.vercel.app",d:"OSINT mesh dashboard"},
-  {n:"GitHub unified",u:"https://github.com/cantgetalonggta-png/ma-os-12-unified-codespace",d:"This monorepo"},
-  {n:"Console repo",u:"https://github.com/cantgetalonggta-png/ma-os-12-console",d:"Desk source"},
-  {n:"MCP stack",u:"https://github.com/cantgetalonggta-png/mcp-stack-deploy",d:"Bridge deploy"},
-  {n:"Live swarm",u:"https://github.com/cantgetalonggta-png/live-online-agent-swarm",d:"Multi-agent swarm"},
-  {n:"Evidence 1953",u:"https://github.com/cantgetalonggta-png/strand-1953-trust-efta-ia-evidence",d:"Public evidence vault"},
-  {n:"Truth engine",u:"https://github.com/cantgetalonggta-png/truth-engine-integrity",d:"Integrity / Graph RAG"},
-  {n:"ECHO",u:"https://github.com/cantgetalonggta-png/ECHO",d:"Ontological agent"},
-  {n:"Meridian atlas",u:"https://github.com/cantgetalonggta-png/meridian-drive-vault-atlas",d:"3D globe atlas"},
-  {n:"Detective Codex",u:"https://github.com/cantgetalonggta-png/detective-codex-vault",d:"RPG-style desk vault"},
-  {n:"Prior codespace",u:"https://special-telegram-xrwr5r5rxgv42v4p4.github.dev/",d:"Existing github.dev session"},
-];
-const g=document.getElementById('grid');
-repos.forEach(r=>{
-  const el=document.createElement('div'); el.className='card';
-  el.innerHTML=`<h2>${r.n}</h2><p>${r.d}</p><a href="${r.u}" target="_blank" rel="noopener">Open →</a>`;
-  g.appendChild(el);
-});
-</script>
+  <h1>MA-OS-12 Operator Portal</h1>
+  <p class="muted">Public-record investigation · Open source allowed under clear guidelines · No secrets in client</p>
+
+  <div class="card">
+    <strong>Live desk</strong>
+    <ul>
+      <li><a href="https://ma-os-12-console-echo-ec69.vercel.app" rel="noopener">MA-OS-12 Console (Vercel)</a></li>
+      <li><a href="https://github.com/cantgetalonggta-png/ma-os-12-console" rel="noopener">Console repo</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Unified codespace</strong>
+    <ul>
+      <li><a href="https://github.com/cantgetalonggta-png/ma-os-12-unified-codespace" rel="noopener">Monorepo</a></li>
+      <li><a href="https://github.com/codespaces/new?hide_repo_select=true&amp;repo=cantgetalonggta-png/ma-os-12-unified-codespace" rel="noopener">Create Codespace</a></li>
+      <li><a href="https://github.com/cantgetalonggta-png/ma-os-12-unified-codespace/blob/main/directives/OPEN_SOURCE_USE_POLICY.md" rel="noopener">Open-Source Use Policy</a></li>
+      <li><a href="https://github.com/cantgetalonggta-png/ma-os-12-unified-codespace/blob/main/directives/OS_POLICY_IMPLEMENTATION.md" rel="noopener">OS Policy Implementation</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Related public modules</strong>
+    <ul>
+      <li><a href="https://github.com/cantgetalonggta-png/live-online-agent-swarm" rel="noopener">live-online-agent-swarm</a></li>
+      <li><a href="https://github.com/cantgetalonggta-png/strand-osint-mesh" rel="noopener">strand-osint-mesh</a></li>
+      <li><a href="https://github.com/cantgetalonggta-png/strand-1953-trust-efta-ia-evidence" rel="noopener">strand-1953 evidence</a></li>
+      <li><a href="https://github.com/cantgetalonggta-png/meridian-drive-vault-atlas" rel="noopener">meridian atlas</a></li>
+    </ul>
+  </div>
+
+  <p class="muted">Association ≠ guilt · SOLID/MAYBE · Audio archive: Drive folder MA-OS-12-AUDIO</p>
 </body>
 </html>
