@@ -1,0 +1,19 @@
+{
+  "utc": "2026-09-27T11:37:00Z",
+  "command": "deploy portal",
+  "portal_source": "portal/index.html",
+  "git_commit": "f2850a580a5ee204db6e641e406730341eaebe98",
+  "cli": "scripts/deploy_portal.sh",
+  "swarm": "AUTOMATIONCREW/portal_swarm.yaml",
+  "vercel_connector": {
+    "teams_visible": 0,
+    "echo-ec69_scope": "403 forbidden / empty teams",
+    "action_required": "Reconnect Vercel connector with team echo-ec69"
+  },
+  "ai_gateway": {
+    "status": "deferred",
+    "reason": "Requires working Vercel team scope to create AI_GATEWAY_API_KEY; never expose key in repo"
+  },
+  "fallback_live": "https://ma-os-12-console-echo-ec69.vercel.app",
+  "self_heal": "After re-auth: bash scripts/deploy_portal.sh or say deploy portal again"
+}
