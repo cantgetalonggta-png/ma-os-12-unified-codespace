@@ -1,0 +1,22 @@
+{
+  "name": "MA-OS-12 Unified Codespace",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.12" },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "postCreateCommand": "bash scripts/bootstrap.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "ms-python.python"],
+      "settings": { "terminal.integrated.defaultProfile.linux": "bash" }
+    }
+  },
+  "forwardPorts": [8080, 3900, 5173],
+  "portsAttributes": {
+    "8080": { "label": "portal" },
+    "3900": { "label": "omnivoice-optional" },
+    "5173": { "label": "desk-dev" }
+  }
+}

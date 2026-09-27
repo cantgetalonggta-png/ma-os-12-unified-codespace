@@ -1,0 +1,37 @@
+# Public submodules only — private/sealed never auto-cloned
+[submodule "modules/ma-os-12-console"]
+	path = modules/ma-os-12-console
+	url = https://github.com/cantgetalonggta-png/ma-os-12-console.git
+[submodule "modules/mcp-stack-deploy"]
+	path = modules/mcp-stack-deploy
+	url = https://github.com/cantgetalonggta-png/mcp-stack-deploy.git
+[submodule "modules/live-online-agent-swarm"]
+	path = modules/live-online-agent-swarm
+	url = https://github.com/cantgetalonggta-png/live-online-agent-swarm.git
+[submodule "modules/strand-osint-mesh"]
+	path = modules/strand-osint-mesh
+	url = https://github.com/cantgetalonggta-png/strand-osint-mesh.git
+[submodule "modules/strand-1953-trust-efta-ia-evidence"]
+	path = modules/strand-1953-trust-efta-ia-evidence
+	url = https://github.com/cantgetalonggta-png/strand-1953-trust-efta-ia-evidence.git
+[submodule "modules/detective-codex-vault"]
+	path = modules/detective-codex-vault
+	url = https://github.com/cantgetalonggta-png/detective-codex-vault.git
+[submodule "modules/meridian-drive-vault-atlas"]
+	path = modules/meridian-drive-vault-atlas
+	url = https://github.com/cantgetalonggta-png/meridian-drive-vault-atlas.git
+[submodule "modules/truth-engine-integrity"]
+	path = modules/truth-engine-integrity
+	url = https://github.com/cantgetalonggta-png/truth-engine-integrity.git
+[submodule "modules/ECHO"]
+	path = modules/ECHO
+	url = https://github.com/cantgetalonggta-png/ECHO.git
+[submodule "modules/epstein-core-web-automation"]
+	path = modules/epstein-core-web-automation
+	url = https://github.com/cantgetalonggta-png/epstein-core-web-automation.git
+[submodule "modules/CodeSorcerer"]
+	path = modules/CodeSorcerer
+	url = https://github.com/cantgetalonggta-png/CodeSorcerer.git
+[submodule "modules/vidmuse-space"]
+	path = modules/vidmuse-space
+	url = https://github.com/cantgetalonggta-png/vidmuse-space.git

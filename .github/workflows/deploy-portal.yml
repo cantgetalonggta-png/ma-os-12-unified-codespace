@@ -1,0 +1,21 @@
+name: deploy-portal
+on:
+  push:
+    branches: [main]
+    paths: ['portal/**', '.github/workflows/deploy-portal.yml']
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Portal present
+        run: test -f portal/index.html && test -f catalog/REPOSITORIES.json
+      - name: Catalog schema
+        run: python3 -c "import json; c=json.load(open('catalog/REPOSITORIES.json')); assert c['dual_tts']['n1']=='rex' and c['dual_tts']['n2']=='helios'"
+      - name: No sealed secrets patterns in tree
+        run: |
+          if grep -RInE 'sk-[a-zA-Z0-9]{20,}|OPENAI_API_KEY=|MANUS_API_KEY=' --exclude-dir=.git . ; then
+            echo "Possible secret material — fail"; exit 1
+          fi
+          echo "scan clean"

@@ -1,0 +1,165 @@
+{
+  "version": "1.0.0",
+  "name": "ma-os-12-unified-codespace",
+  "owner": "cantgetalonggta-png",
+  "prior_codespace_hint": "https://special-telegram-xrwr5r5rxgv42v4p4.github.dev/",
+  "dual_tts": {
+    "n1": "rex",
+    "n2": "helios"
+  },
+  "ceiling": "public-record only; association != guilt; no secrets in tree",
+  "repositories": [
+    {
+      "name": "ma-os-12-console",
+      "role": "Investigation Desk SPA",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/ma-os-12-console",
+      "submodule": true,
+      "deploy": "https://ma-os-12-console-echo-ec69.vercel.app"
+    },
+    {
+      "name": "mcp-stack-deploy",
+      "role": "MCP / Manus bridge stack",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/mcp-stack-deploy",
+      "submodule": true,
+      "deploy": "https://manus-mcp-bridge-echo-ec69.vercel.app/health"
+    },
+    {
+      "name": "live-online-agent-swarm",
+      "role": "Multi-agent investigation swarm",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/live-online-agent-swarm",
+      "submodule": true
+    },
+    {
+      "name": "strand-osint-mesh",
+      "role": "STRAND OSINT mesh",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/strand-osint-mesh",
+      "submodule": true,
+      "deploy": "https://strand-osint-mesh.vercel.app"
+    },
+    {
+      "name": "strand-1953-trust-efta-ia-evidence",
+      "role": "1953 Trust / EFTA evidence vault",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/strand-1953-trust-efta-ia-evidence",
+      "submodule": true
+    },
+    {
+      "name": "detective-codex-vault",
+      "role": "Detective Codex desk",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/detective-codex-vault",
+      "submodule": true
+    },
+    {
+      "name": "meridian-drive-vault-atlas",
+      "role": "3D Meridian globe atlas",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/meridian-drive-vault-atlas",
+      "submodule": true
+    },
+    {
+      "name": "truth-engine-integrity",
+      "role": "Integrity / Graph RAG truth engine",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/truth-engine-integrity",
+      "submodule": true
+    },
+    {
+      "name": "ECHO",
+      "role": "ECHO ontological agent",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/ECHO",
+      "submodule": true
+    },
+    {
+      "name": "epstein-core-web-automation",
+      "role": "Core web automation organizer",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/epstein-core-web-automation",
+      "submodule": true
+    },
+    {
+      "name": "CodeSorcerer",
+      "role": "Custom agent framework",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/CodeSorcerer",
+      "submodule": true
+    },
+    {
+      "name": "vidmuse-space",
+      "role": "VidMuse HF Space demo",
+      "visibility": "public",
+      "url": "https://github.com/cantgetalonggta-png/vidmuse-space",
+      "submodule": true
+    },
+    {
+      "name": "SOVEREIGN_UNIFIED_PLATFORM_2026-09-11",
+      "role": "Prior unified monorepo (private catalog)",
+      "visibility": "private",
+      "url": "https://github.com/cantgetalonggta-png/SOVEREIGN_UNIFIED_PLATFORM_2026-09-11",
+      "submodule": false
+    },
+    {
+      "name": "Sovereign_MultiAgent_Swarm_Backup_2026-09-11",
+      "role": "25-agent swarm backup (private)",
+      "visibility": "private",
+      "url": "https://github.com/cantgetalonggta-png/Sovereign_MultiAgent_Swarm_Backup_2026-09-11",
+      "submodule": false
+    },
+    {
+      "name": "FULL_WSL_MultiAgent_Framework_2026-09-11",
+      "role": "WSL multi-agent framework (private)",
+      "visibility": "private",
+      "url": "https://github.com/cantgetalonggta-png/FULL_WSL_MultiAgent_Framework_2026-09-11",
+      "submodule": false
+    },
+    {
+      "name": "WSL_Agent_Stack_2026-09-11",
+      "role": "WSL agent stack (private)",
+      "visibility": "private",
+      "url": "https://github.com/cantgetalonggta-png/WSL_Agent_Stack_2026-09-11",
+      "submodule": false
+    },
+    {
+      "name": "workspace-backup-2026-09-24",
+      "role": "Workspace backup (private)",
+      "visibility": "private",
+      "url": "https://github.com/cantgetalonggta-png/workspace-backup-2026-09-24",
+      "submodule": false
+    },
+    {
+      "name": "api-keys-secret-store",
+      "role": "SEALED vault \u2014 never submodule / never public clone",
+      "visibility": "private",
+      "url": "https://github.com/cantgetalonggta-png/api-keys-secret-store",
+      "submodule": false,
+      "sealed": true
+    }
+  ],
+  "public_submodules": [
+    "ma-os-12-console",
+    "mcp-stack-deploy",
+    "live-online-agent-swarm",
+    "strand-osint-mesh",
+    "strand-1953-trust-efta-ia-evidence",
+    "detective-codex-vault",
+    "meridian-drive-vault-atlas",
+    "truth-engine-integrity",
+    "ECHO",
+    "epstein-core-web-automation",
+    "CodeSorcerer",
+    "vidmuse-space"
+  ],
+  "sealed": [
+    "SOVEREIGN_UNIFIED_PLATFORM_2026-09-11",
+    "Sovereign_MultiAgent_Swarm_Backup_2026-09-11",
+    "FULL_WSL_MultiAgent_Framework_2026-09-11",
+    "WSL_Agent_Stack_2026-09-11",
+    "workspace-backup-2026-09-24",
+    "api-keys-secret-store"
+  ]
+}
