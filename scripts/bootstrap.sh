@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
+# Public submodules only — never clone sealed private key stores
 set -euo pipefail
-cd "$(dirname "$0")/.."
-echo "[bootstrap] MA-OS-12 unified codespace"
-git submodule update --init --recursive 2>/dev/null || echo "[bootstrap] submodules optional / not yet populated"
-command -v node >/dev/null && node -v
-command -v python3 >/dev/null && python3 -V
-command -v gh >/dev/null && gh auth status 2>/dev/null || true
-echo "[bootstrap] catalog repos: $(python3 -c 'import json;print(len(json.load(open(\"catalog/REPOSITORIES.json\"))[\"repositories\"]))')"
-echo "[bootstrap] done — run scripts/status.sh"
+echo "[MA-OS-12] bootstrap — public modules only"
+if [[ -f .gitmodules ]]; then
+  git submodule sync --recursive || true
+  git submodule update --init --recursive || true
+fi
+echo "[MA-OS-12] See catalog/REPO_INVENTORY.md for private sealed list (not cloned)."
+echo "[MA-OS-12] Policy: directives/OPEN_SOURCE_USE_POLICY.md"
+echo "[MA-OS-12] bootstrap done"

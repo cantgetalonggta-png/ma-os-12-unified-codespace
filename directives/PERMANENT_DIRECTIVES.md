@@ -1,19 +1,12 @@
-# MA-OS-12 PERMANENT DIRECTIVES
-# Cancel only: STOP EXPORT
+# Permanent directives — MA-OS-12 Unified Codespace
 
-## Dual TTS LOCKED
-- N1: **Rex** · N2: **Helios**
-- Style: **unhinged conversational** — sighs, laughs, jokes, emotional swings, natural imperfect human banter (not corporate funeral voice)
-- Still: no secrets, public-record ceiling, association ≠ guilt
-- Duration: ~6 minutes dual MP3 + executive PDF every reply
+Updated 2026-09-27.
 
-## Combination root
-- **Epstein investigation codespace base = ma-os-12-console**
-- Unified monorepo indexes all repos; desk is living runtime
-
-## AUTOMATIONCREW
-- config/self.agents_config.yaml
-- config/self.tasks_config.yaml
-- self/LEARNING_LOG.md + SELF_UPDATE.md
-- scripts/crew_cycle.py
-- DEPLOYMENT_ACTIVATION green when desk+bridge 200
+1. **Public-record ceiling** for investigation claims. Association ≠ guilt. SOLID / MAYBE with provenance.
+2. **No secrets in public tree.** Private key repos catalog-only.
+3. **Open source allowed** under `OPEN_SOURCE_USE_POLICY.md`.
+4. **Audio briefings → Drive** per `AUDIO_TO_DRIVE_PERMANENT.md`.
+5. **Recommendations** tracked in `RECOMMENDATIONS_BACKLOG.md`.
+6. Dual TTS hosts when producing status audio: **Rex** + **Helios**.
+7. Cancel dual permanent export: operator says `STOP EXPORT`.
+8. Pause automations: `pause automation` / `stop automationcrew`.
