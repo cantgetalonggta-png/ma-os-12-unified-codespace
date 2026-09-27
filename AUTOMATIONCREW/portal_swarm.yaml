@@ -1,0 +1,26 @@
+# Portal deployment swarm (meta)
+agents:
+  - id: PortalBuilderAgent
+    role: scaffold validate portal/ structure
+  - id: AssetIngestionAgent
+    role: Drive MA-OS-12-AUDIO + public catalog only
+  - id: VercelLinkAgent
+    role: auth project rootDirectory=portal team scope
+  - id: DeployAgent
+    role: vercel deploy --prod; retry on failure
+  - id: RL-OrchestratorAgent
+    role: log failures; suggest config mutations
+shared_memory:
+  - ontology_graph
+  - build_metadata
+  - deployment_logs
+  - error_signatures
+failure_modes:
+  token_expiration: request_connector_auth Vercel scope echo-ec69
+  build_failure: DeployAgent retry with static outputDirectory=.
+  missing_assets: AssetIngestionAgent rescan Drive public folders
+commands:
+  - deploy portal
+  - rebuild portal
+  - ingest OSINT
+  - evolve agents
